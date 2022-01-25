@@ -46,10 +46,17 @@
     var gridw = ds_grid_width(grid);
     var gridh = ds_grid_height(grid);
     
+    var drawCount = 0;
+    /*
     for (var i = 1; i &lt; gridw-1; i++)
     {
         for (var j = 1; j &lt; gridh-1; j++)
         {
+            if (drawCount mod 100 == 0)
+            {
+                //d3d_transform_set_identity();
+            }
+            
             if grid[# i-1, j-1] == 1
 //            || grid[# i-1, j-1] == mapcode.void
 //            || grid[# i-1, j-1] == mapcode.wall
@@ -58,9 +65,13 @@
                 draw_set_colour(c_white);
                 draw_rectangle((i)*CELL, (j)*CELL, (i)*CELL+CELL, (j)*CELL+CELL, false);
                 surface_reset_target();
+                drawCount++;
+                draw_flush();
             }
         }
-    }
+    }*/
+        
+    //d3d_transform_set_identity();
     
     surface_reset_target();
     
@@ -231,7 +242,7 @@
             var gridw = ds_grid_width(grid);
             var gridh = ds_grid_height(grid);
             
-            for (var i = 1; i &lt; gridw-1; i++)
+            /*for (var i = 1; i &lt; gridw-1; i++)
             {
                 for (var j = 1; j &lt; gridh-1; j++)
                 {
@@ -243,7 +254,7 @@
                         surface_reset_target();
                     }
                 }
-            }
+            }*/
         }
         
         // SHADOW SURFACE

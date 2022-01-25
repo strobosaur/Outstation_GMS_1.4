@@ -545,12 +545,12 @@
     global.menu[# ymenu.item, xmenu.main] = 0
     global.menu[# ymenu.options, xmenu.main] = 0
 
-    global.menu[# ymenu.stats, xmenu.scr_exe] = menu_attributes;
+   /* global.menu[# ymenu.stats, xmenu.scr_exe] = menu_attributes;
     global.menu[# ymenu.wpn, xmenu.scr_exe] = menu_weapon;
     global.menu[# ymenu.skill, xmenu.scr_exe] = menu_skills;
     global.menu[# ymenu.item, xmenu.scr_exe] = menu_items;
     global.menu[# ymenu.options, xmenu.scr_exe] = menu_options;
-    global.menu[# ymenu.upgrade, xmenu.scr_exe] = menu_level_up;
+    global.menu[# ymenu.upgrade, xmenu.scr_exe] = menu_level_up;*/
 
     global.menu[# ymenu.stats, xmenu.draw] = menu_draw_stats;
     global.menu[# ymenu.wpn, xmenu.draw] = menu_draw_wpn;
